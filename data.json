@@ -1,0 +1,1192 @@
+[
+  {
+    "part": [1],
+    "stand": null,
+    "user": "Jonathan Joestar",
+    "tracks": [
+      { "artist": "Hayato Matsuo", "song": "Fukutsu ~Mushin no Sakebi~", "audio": "audio/jonathan_theme.mp3" }
+    ]
+  },
+  {
+    "part": [1, 3, 6],
+    "stand": "The World",
+    "user": "Dio Brando",
+    "tracks": [
+      { "artist": "Dio", "song": "Holy Diver", "audio": "audio/dio.mp3" },
+      { "artist": "Hayato Matsuo", "song": "Dark Rebirth", "audio": "audio/dio_theme.mp3" }
+    ]
+  },
+  {
+    "part": [1],
+    "stand": null,
+    "user": "Danny",
+    "tracks": [
+      { "artist": "Loggins and Messina", "song": "Danny's Song", "audio": "audio/dannys_song.mp3" }
+    ]
+  },
+  {
+    "part": [1],
+    "stand": null,
+    "user": "Erina Pendleton",
+    "tracks": [
+      { "artist": "The Beatles", "song": "Eleanor Rigby", "audio": "audio/eleanor_rigby.mp3" }
+    ]
+  },
+  {
+    "part": [1, 2],
+    "stand": null,
+    "user": "Robert E. O. Speedwagon",
+    "tracks": [
+      { "artist": "REO Speedwagon", "song": "Keep on Loving You", "audio": "audio/reo_speedwagon.mp3" }
+    ]
+  },
+  {
+    "part": [1],
+    "stand": null,
+    "user": "Will Anthonio Zeppeli",
+    "tracks": [
+      { "artist": "Led Zeppelin", "song": "Immigrant Song", "audio": "audio/led_zeppelin.mp3" },
+      { "artist": "Hayato Matsuo", "song": "Catch the Target", "audio": "audio/zeppeli_theme.mp3" }
+    ]
+  },
+  {
+    "part": [1],
+    "stand": null,
+    "user": "Wang Chan",
+    "tracks": [
+      { "artist": "Wang Chung", "song": "Dance Hall Days", "audio": "audio/wang_chung.mp3" }
+    ]
+  },
+  {
+    "part": [1],
+    "stand": null,
+    "user": "Poco",
+    "tracks": [
+      { "artist": "Poco", "song": "Crazy Love", "audio": "audio/poco.mp3" }
+    ]
+  },
+  {
+    "part": [1],
+    "stand": null,
+    "user": "Tarkus",
+    "tracks": [
+      { "artist": "Emerson, Lake & Palmer", "song": "Tarkus", "audio": "audio/tarkus.mp3" }
+    ]
+  },
+  {
+    "part": [1],
+    "stand": "Danse Macab-Hair",
+    "user": "Bruford",
+    "tracks": [
+      { "artist": "Bill Bruford", "song": "Feels Good to Me", "audio": "audio/bill_bruford.mp3" },
+      { "artist": "Camille Saint-Saëns", "song": "Danse macabre", "audio": "audio/danse_macabre.mp3" }
+    ]
+  },
+  {
+    "part": [1],
+    "stand": null,
+    "user": "Tonpetty",
+    "tracks": [
+      { "artist": "Tom Petty", "song": "Free Fallin'", "audio": "audio/tom_petty.mp3" }
+    ]
+  },
+  {
+    "part": [1],
+    "stand": null,
+    "user": "Dire",
+    "aliases": ["Straizo", "Dire Straits"],
+    "tracks": [
+      { "artist": "Dire Straits", "song": "Sultans of Swing", "audio": "audio/dire_straits.mp3" }
+    ]
+  },
+  {
+    "part": [1, 2],
+    "stand": null,
+    "user": "Straizo",
+    "aliases": ["Dire", "Dire Straits"],
+    "tracks": [
+      { "artist": "Dire Straits", "song": "Money for Nothing", "audio": "audio/dire_straits_straizo.mp3" }
+    ]
+  },
+  {
+    "part": [1],
+    "stand": null,
+    "user": "Father Styx",
+    "tracks": [
+      { "artist": "Styx", "song": "Come Sail Away", "audio": "audio/styx.mp3" }
+    ]
+  },
+  {
+    "part": [2, 3, 4],
+    "stand": "Hermit Purple",
+    "user": "Joseph Joestar",
+    "tracks": [
+      { "artist": "The Beatles", "song": "Get Back", "audio": "audio/joseph_beatles.mp3" },
+      { "artist": "Taku Iwasaki", "song": "Overdrive", "audio": "audio/joseph_theme.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Caesar Anthonio Zeppeli",
+    "tracks": [
+      { "artist": "Taku Iwasaki", "song": "Il mare eterno nella mia anima", "audio": "audio/caesar_theme.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Lisa Lisa",
+    "tracks": [
+      { "artist": "Lisa Lisa and Cult Jam", "song": "I Wonder If I Take You Home", "audio": "audio/lisa_lisa.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Rudol von Stroheim",
+    "tracks": [
+      { "artist": "Taku Iwasaki", "song": "Propaganda", "audio": "audio/stroheim_theme.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Kars",
+    "tracks": [
+      { "artist": "The Cars", "song": "Drive", "audio": "audio/kars_cars.mp3" },
+      { "artist": "Taku Iwasaki", "song": "Awake", "audio": "audio/pillar_men_theme.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Esidisi",
+    "tracks": [
+      { "artist": "AC/DC", "song": "Back In Black", "audio": "audio/acdc.mp3" },
+      { "artist": "Taku Iwasaki", "song": "Awake", "audio": "audio/pillar_men_theme.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Wamuu",
+    "tracks": [
+      { "artist": "Wham!", "song": "Wake Me Up Before You Go-Go", "audio": "audio/wham.mp3" },
+      { "artist": "Taku Iwasaki", "song": "Awake", "audio": "audio/pillar_men_theme.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Santana",
+    "tracks": [
+      { "artist": "Santana", "song": "Black Magic Woman", "audio": "audio/santana.mp3" },
+      { "artist": "Taku Iwasaki", "song": "Awake", "audio": "audio/pillar_men_theme.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Smokey Brown",
+    "tracks": [
+      { "artist": "Smokey Robinson", "song": "The Tracks of My Tears", "audio": "audio/smokey_robinson.mp3" },
+      { "artist": "James Brown", "song": "I Got You (I Feel Good)", "audio": "audio/james_brown.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Messina",
+    "aliases": ["Loggins"],
+    "tracks": [
+      { "artist": "Jim Messina", "song": "Your Catch", "audio": "audio/messina.mp3" },
+      { "artist": "Loggins and Messina", "song": "Angry Eyes", "audio": "audio/loggins_and_messina.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Loggins",
+    "aliases": ["Messina"],
+    "tracks": [
+      { "artist": "Kenny Loggins", "song": "Danger Zone", "audio": "audio/loggins.mp3" },
+      { "artist": "Loggins and Messina", "song": "Angry Eyes", "audio": "audio/loggins_and_messina.mp3" }
+    ]
+  },
+  {
+    "part": [2, 3],
+    "stand": null,
+    "user": "Suzi Q",
+    "tracks": [
+      { "artist": "Suzi Quatro", "song": "Stumblin' In", "audio": "audio/suzi_quatro.mp3" },
+      { "artist": "Dale Hawkins", "song": "Susie Q", "audio": "audio/susie_q.mp3" },
+      { "artist": "Creedence Clearwater Revival", "song": "Susie Q", "audio": "audio/ccr_susie_q.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Donovan",
+    "tracks": [
+      { "artist": "Donovan", "song": "Season of the Witch", "audio": "audio/donovan.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Wired Beck",
+    "tracks": [
+      { "artist": "Jeff Beck", "song": "Goodbye Pork Pie Hat", "audio": "audio/wired_beck.mp3" }
+    ]
+  },
+  {
+    "part": [3, 4, 5, 6],
+    "stand": "Star Platinum",
+    "user": "Jotaro Kujo",
+    "tracks": [
+      { "artist": "Yugo Kanno", "song": "Stardust Crusaders", "audio": "audio/jotaro_theme.mp3" },
+      { "artist": "Toshinobu Kubota", "song": "La La La Love Song", "audio": "audio/toshinobu_kubota.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Magician's Red",
+    "user": "Muhammad Avdol",
+    "tracks": [
+      { "artist": "Paula Abdul", "song": "Straight Up", "audio": "audio/paula_abdul.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Hierophant Green",
+    "user": "Noriaki Kakyoin",
+    "tracks": [
+      { "artist": "Sting", "song": "Shape of My Heart", "audio": "audio/sting.mp3" }
+    ]
+  },
+  {
+    "part": [3, 5],
+    "stand": "Silver Chariot",
+    "user": "Jean Pierre Polnareff",
+    "tracks": [
+      { "artist": "Michel Polnareff", "song": "La Poupée qui fait non", "audio": "audio/michel_polnareff.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "The Fool",
+    "user": "Iggy",
+    "tracks": [
+      { "artist": "Iggy Pop", "song": "The Passenger", "audio": "audio/iggy_pop.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Tower of Gray",
+    "user": "Gray Fly",
+    "tracks": [
+      { "artist": "Glenn Frey", "song": "You Belong to the City", "audio": "audio/glenn_frey.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Dark Blue Moon",
+    "user": "Imposter Captain Tennille",
+    "tracks": [
+      { "artist": "Captain & Tennille", "song": "Love Will Keep Us Together", "audio": "audio/captain_tennille.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Strength",
+    "user": "Forever",
+    "tracks": [
+      { "artist": "Wu-Tang Clan", "song": "C.R.E.A.M.", "audio": "audio/wutang_clan.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Ebony Devil",
+    "user": "Devo the Cursed",
+    "tracks": [
+      { "artist": "Devo", "song": "Whip It", "audio": "audio/devo.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Yellow Temperance",
+    "user": "Rubber Soul",
+    "tracks": [
+      { "artist": "The Beatles", "song": "In My Life", "audio": "audio/rubber_soul.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Hanged Man",
+    "user": "J. Geil",
+    "tracks": [
+      { "artist": "The J. Geils Band", "song": "Centerfold", "audio": "audio/j_geils_band.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Emperor",
+    "user": "Hol Horse",
+    "tracks": [
+      { "artist": "Hall & Oates", "song": "Maneater", "audio": "audio/hall_oates.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Empress",
+    "user": "Nena",
+    "tracks": [
+      { "artist": "Nena", "song": "99 Luftballons", "audio": "audio/nena.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Wheel of Fortune",
+    "user": "ZZ",
+    "tracks": [
+      { "artist": "ZZ Top", "song": "La Grange", "audio": "audio/zz_top.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Justice",
+    "user": "Enya the Hag",
+    "tracks": [
+      { "artist": "Enya", "song": "Only Time", "audio": "audio/enya.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Lovers",
+    "user": "Steely Dan",
+    "tracks": [
+      { "artist": "Steely Dan", "song": "Do It Again", "audio": "audio/steely_dan.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Sun",
+    "user": "Arabia Fats",
+    "tracks": [
+      { "artist": "Fats Domino", "song": "Blueberry Hill", "audio": "audio/fats_domino.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Death Thirteen",
+    "user": "Mannish Boy",
+    "tracks": [
+      { "artist": "Muddy Waters", "song": "Mannish Boy", "audio": "audio/mannish_boy.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Judgement",
+    "user": "Cameo",
+    "tracks": [
+      { "artist": "Cameo", "song": "Word Up!", "audio": "audio/cameo.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "High Priestess",
+    "user": "Midler",
+    "tracks": [
+      { "artist": "Bette Midler", "song": "The Rose", "audio": "audio/bette_midler.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Geb",
+    "user": "N'Doul",
+    "tracks": [
+      { "artist": "Youssou N'Dour", "song": "7 Seconds", "audio": "audio/youssou_ndour.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Khnum",
+    "user": "Oingo",
+    "aliases": ["Boingo"],
+    "tracks": [
+      { "artist": "Oingo Boingo", "song": "Dead Man's Party", "audio": "audio/oingo_boingo.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Tohth",
+    "user": "Boingo",
+    "aliases": ["Oingo"],
+    "tracks": [
+      { "artist": "Oingo Boingo", "song": "Weird Science", "audio": "audio/oingo_boingo_boingo.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Anubis",
+    "user": "Chaka",
+    "tracks": [
+      { "artist": "Chaka Khan", "song": "I Feel for You", "audio": "audio/chaka_khan.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Anubis",
+    "user": "Khan",
+    "tracks": [
+      { "artist": "Chaka Khan", "song": "Ain't Nobody", "audio": "audio/khan.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Bastet",
+    "user": "Mariah",
+    "tracks": [
+      { "artist": "Mariah Carey", "song": "Fantasy", "audio": "audio/mariah_carey.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Sethan",
+    "user": "Alessi",
+    "tracks": [
+      { "artist": "Alessi Brothers", "song": "Oh Lori", "audio": "audio/alessi_brothers.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Osiris",
+    "user": "Daniel J. D'Arby",
+    "tracks": [
+      { "artist": "Terence Trent D'Arby", "song": "Sign Your Name", "audio": "audio/daniel_darby.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Horus",
+    "user": "Pet Shop",
+    "tracks": [
+      { "artist": "Pet Shop Boys", "song": "West End Girls", "audio": "audio/pet_shop_boys.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Atum",
+    "user": "Telence T. D'Arby",
+    "tracks": [
+      { "artist": "Terence Trent D'Arby", "song": "Wishing Well", "audio": "audio/telence_darby.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Tenore Sax",
+    "user": "Kenny G.",
+    "tracks": [
+      { "artist": "Kenny G", "song": "Songbird", "audio": "audio/kenny_g.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Cream",
+    "user": "Vanilla Ice",
+    "tracks": [
+      { "artist": "Vanilla Ice", "song": "Ice Ice Baby", "audio": "audio/vanilla_ice.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": "Holy's Stand",
+    "user": "Holy Kujo",
+    "tracks": [
+      { "artist": "Kylie Minogue", "song": "The Loco-Motion", "audio": "audio/locomotion.mp3" },
+      { "artist": "Seiko Matsuda", "song": "Blue Coral Reef", "audio": "audio/blue_coral_reef.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": null,
+    "user": "Roses",
+    "tracks": [
+      { "artist": "Guns N' Roses", "song": "Welcome To The Jungle", "audio": "audio/guns_n_roses.mp3" }
+    ]
+  },
+  {
+    "part": [3],
+    "stand": null,
+    "user": "Wilson Phillips",
+    "tracks": [
+      { "artist": "Wilson Phillips", "song": "Hold On", "audio": "audio/wilson_phillips.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Crazy Diamond",
+    "user": "Josuke Higashikata",
+    "tracks": [
+      { "artist": "Pink Floyd", "song": "Shine On You Crazy Diamond", "audio": "audio/crazy_diamond.mp3" },
+      { "artist": "Yugo Kanno", "song": "Diamond is Unbreakable", "audio": "audio/josuke_theme.mp3" }
+    ]
+  },
+  {
+    "part": [4, 5],
+    "stand": "Echoes",
+    "user": "Koichi Hirose",
+    "tracks": [
+      { "artist": "Pink Floyd", "song": "Echoes", "audio": "audio/echoes.mp3" },
+      { "artist": "Yugo Kanno", "song": "Courage", "audio": "audio/koichi_theme.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "The Hand",
+    "user": "Okuyasu Nijimura",
+    "tracks": [
+      { "artist": "The Band", "song": "The Weight", "audio": "audio/the_hand.mp3" },
+      { "artist": "Yugo Kanno", "song": "The Hand", "audio": "audio/okuyasu_theme.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Heaven's Door",
+    "user": "Rohan Kishibe",
+    "tracks": [
+      { "artist": "Bob Dylan", "song": "Knockin' on Heaven's Door", "audio": "audio/heavens_door.mp3" },
+      { "artist": "Yugo Kanno", "song": "Rohan Kishibe's Theme", "audio": "audio/rohan_theme.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Aqua Necklace",
+    "user": "Anjuro Katagiri",
+    "tracks": [
+      { "artist": "Asia", "song": "Aqua", "audio": "audio/aqua_necklace.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Bad Company",
+    "user": "Keicho Nijimura",
+    "tracks": [
+      { "artist": "Bad Company", "song": "Bad Company", "audio": "audio/bad_company.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Red Hot Chili Pepper",
+    "user": "Akira Otoishi",
+    "tracks": [
+      { "artist": "Red Hot Chili Peppers", "song": "Give It Away", "audio": "audio/red_hot_chili_pepper.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "The Lock",
+    "user": "Tamami Kobayashi",
+    "tracks": [
+      { "artist": "The Who", "song": "The Rock", "audio": "audio/the_lock.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Surface",
+    "user": "Toshikazu Hazamada",
+    "tracks": [
+      { "artist": "Surface", "song": "Happy", "audio": "audio/surface.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Love Deluxe",
+    "user": "Yukako Yamagishi",
+    "tracks": [
+      { "artist": "Sade", "song": "Love Deluxe", "audio": "audio/love_deluxe.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Pearl Jam",
+    "user": "Tonio Trussardi",
+    "tracks": [
+      { "artist": "Pearl Jam", "song": "Alive", "audio": "audio/pearl_jam.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Achtung Baby",
+    "user": "Shizuka Joestar",
+    "tracks": [
+      { "artist": "U2", "song": "Achtung Baby", "audio": "audio/achtung_baby.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Ratt",
+    "user": "Bug-Eaten",
+    "tracks": [
+      { "artist": "Ratt", "song": "Round and Round", "audio": "audio/ratt.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Harvest",
+    "user": "Shigekiyo Yangu",
+    "tracks": [
+      { "artist": "Neil Young", "song": "Harvest", "audio": "audio/harvest.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Cinderella",
+    "user": "Aya Tsuji",
+    "tracks": [
+      { "artist": "Cinderella", "song": "Don't Know What You Got (Till It's Gone)", "audio": "audio/cinderella.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Atom Heart Father",
+    "user": "Yoshihiro Kira",
+    "tracks": [
+      { "artist": "Pink Floyd", "song": "Atom Heart Mother", "audio": "audio/atom_heart_father.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Boy II Man",
+    "user": "Ken Oyanagi",
+    "tracks": [
+      { "artist": "Boyz II Men", "song": "End of the Road", "audio": "audio/boy_ii_man.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Earth Wind and Fire",
+    "user": "Mikitaka Hazekura",
+    "tracks": [
+      { "artist": "Earth, Wind & Fire", "song": "September", "audio": "audio/earth_wind_and_fire.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Highway Star",
+    "user": "Yuya Fungami",
+    "tracks": [
+      { "artist": "Deep Purple", "song": "Highway Star", "audio": "audio/highway_star.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Stray Cat",
+    "user": "Tama",
+    "tracks": [
+      { "artist": "Stray Cats", "song": "Stray Cat Strut", "audio": "audio/stray_cat.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Super Fly",
+    "user": "Toyohiro Kanedaichi",
+    "tracks": [
+      { "artist": "Curtis Mayfield", "song": "Superfly", "audio": "audio/super_fly.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Enigma",
+    "user": "Terunosuke Miyamoto",
+    "tracks": [
+      { "artist": "Enigma", "song": "Sadeness (Part I)", "audio": "audio/enigma.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Cheap Trick",
+    "user": "Masazo Kinoto",
+    "tracks": [
+      { "artist": "Cheap Trick", "song": "I Want You to Want Me", "audio": "audio/cheap_trick.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Killer Queen",
+    "user": "Yoshikage Kira",
+    "tracks": [
+      { "artist": "Queen", "song": "Killer Queen", "audio": "audio/killer_queen.mp3" },
+      { "artist": "Yugo Kanno", "song": "Killer (Yoshikage Kira's Theme)", "audio": "audio/kira_theme.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Sheer Heart Attack",
+    "user": "Yoshikage Kira",
+    "tracks": [
+      { "artist": "Queen", "song": "Sheer Heart Attack", "audio": "audio/sheer_heart_attack.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": "Bites the Dust",
+    "user": "Yoshikage Kira",
+    "tracks": [
+      { "artist": "Queen", "song": "Another One Bites the Dust", "audio": "audio/bites_the_dust.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": null,
+    "user": "Reimi Sugimoto",
+    "tracks": [
+      { "artist": "Pink Floyd", "song": "See Emily Play", "audio": "audio/reimi_sugimoto.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": null,
+    "user": "Arnold",
+    "tracks": [
+      { "artist": "Pink Floyd", "song": "Arnold Layne", "audio": "audio/arnold.mp3" }
+    ]
+  },
+  {
+    "part": [4],
+    "stand": null,
+    "user": "Police",
+    "tracks": [
+      { "artist": "The Police", "song": "Roxanne", "audio": "audio/police.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Gold Experience",
+    "user": "Giorno Giovanna",
+    "tracks": [
+      { "artist": "Prince", "song": "The Gold Experience", "audio": "audio/gold_experience.mp3" },
+      { "artist": "Yugo Kanno", "song": "il vento d'oro", "audio": "audio/giorno_theme.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Sticky Fingers",
+    "user": "Bruno Bucciarati",
+    "tracks": [
+      { "artist": "The Rolling Stones", "song": "Brown Sugar", "audio": "audio/sticky_fingers.mp3" },
+      { "artist": "Yugo Kanno", "song": "nella cerniera", "audio": "audio/bucciarati_theme.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Moody Blues",
+    "user": "Leone Abbacchio",
+    "tracks": [
+      { "artist": "The Moody Blues", "song": "Nights in White Satin", "audio": "audio/moody_blues.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Sex Pistols",
+    "user": "Guido Mista",
+    "tracks": [
+      { "artist": "Sex Pistols", "song": "Anarchy in the U.K.", "audio": "audio/sex_pistols.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Aerosmith",
+    "user": "Narancia Ghirga",
+    "tracks": [
+      { "artist": "Aerosmith", "song": "Dream On", "audio": "audio/aerosmith.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Purple Haze",
+    "user": "Pannacotta Fugo",
+    "tracks": [
+      { "artist": "Jimi Hendrix", "song": "Purple Haze", "audio": "audio/purple_haze.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Spice Girl",
+    "user": "Trish Una",
+    "tracks": [
+      { "artist": "Spice Girls", "song": "Wannabe", "audio": "audio/spice_girl.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Mr.President",
+    "user": "Coco Jumbo",
+    "tracks": [
+      { "artist": "Mr. President", "song": "Coco Jambo", "audio": "audio/mr_president.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "King Crimson",
+    "user": "Diavolo",
+    "tracks": [
+      { "artist": "King Crimson", "song": "The Court of the Crimson King", "audio": "audio/king_crimson.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "King Crimson",
+    "user": "Vinegar Doppio",
+    "tracks": [
+      { "artist": "King Crimson", "song": "Epitaph", "audio": "audio/epitaph.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Black Sabbath",
+    "user": "Polpo",
+    "tracks": [
+      { "artist": "Black Sabbath", "song": "Paranoid", "audio": "audio/black_sabbath.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Soft Machine",
+    "user": "Mario Zucchero",
+    "tracks": [
+      { "artist": "Soft Machine", "song": "Joy of a Toy", "audio": "audio/soft_machine.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Kraft Work",
+    "user": "Sale",
+    "tracks": [
+      { "artist": "Kraftwerk", "song": "The Model", "audio": "audio/kraft_work.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Little Feet",
+    "user": "Formaggio",
+    "tracks": [
+      { "artist": "Little Feat", "song": "Dixie Chicken", "audio": "audio/little_feet.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Man in the Mirror",
+    "user": "Illuso",
+    "tracks": [
+      { "artist": "Michael Jackson", "song": "Man in the Mirror", "audio": "audio/man_in_the_mirror.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Beach Boy",
+    "user": "Pesci",
+    "tracks": [
+      { "artist": "The Beach Boys", "song": "Good Vibrations", "audio": "audio/beach_boy.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "The Grateful Dead",
+    "user": "Prosciutto",
+    "tracks": [
+      { "artist": "Grateful Dead", "song": "Touch of Grey", "audio": "audio/grateful_dead.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Baby Face",
+    "user": "Melone",
+    "tracks": [
+      { "artist": "Babyface", "song": "Whip Appeal", "audio": "audio/baby_face.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "White Album",
+    "user": "Ghiaccio",
+    "tracks": [
+      { "artist": "The Beatles", "song": "While My Guitar Gently Weeps", "audio": "audio/white_album.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Clash",
+    "user": "Squalo",
+    "tracks": [
+      { "artist": "The Clash", "song": "London Calling", "audio": "audio/clash.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Talking Head",
+    "user": "Tizzano",
+    "tracks": [
+      { "artist": "Talking Heads", "song": "Once in a Lifetime", "audio": "audio/talking_head.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Notorious B.I.G",
+    "user": "Carne",
+    "tracks": [
+      { "artist": "The Notorious B.I.G.", "song": "Juicy", "audio": "audio/notorious_big.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Metallica",
+    "user": "Risotto Nero",
+    "tracks": [
+      { "artist": "Metallica", "song": "Enter Sandman", "audio": "audio/metallica.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Green Day",
+    "user": "Cioccolata",
+    "tracks": [
+      { "artist": "Green Day", "song": "Basket Case", "audio": "audio/green_day.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Oasis",
+    "user": "Secco",
+    "tracks": [
+      { "artist": "Oasis", "song": "Wonderwall", "audio": "audio/oasis.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": "Rolling Stones",
+    "user": "Scolippi",
+    "tracks": [
+      { "artist": "The Rolling Stones", "song": "Paint It, Black", "audio": "audio/rolling_stones.mp3" }
+    ]
+  },
+  {
+    "part": [5],
+    "stand": null,
+    "user": "Leaky-Eye Luca",
+    "tracks": [
+      { "artist": "Suzanne Vega", "song": "Luka", "audio": "audio/luca.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Stone Free",
+    "user": "Jolyne Cujoh",
+    "tracks": [
+      { "artist": "The Jimi Hendrix Experience", "song": "Stone Free", "audio": "audio/stone_free.mp3" },
+      { "artist": "Yugo Kanno", "song": "Jolyne's Theme", "audio": "audio/jolyne_theme.mp3" },
+      { "artist": "Dolly Parton", "song": "Jolene", "audio": "audio/jolene.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Kiss",
+    "user": "Ermes Costello",
+    "tracks": [
+      { "artist": "Kiss", "song": "I Was Made For Lovin' You", "audio": "audio/kiss.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Burning Down the House",
+    "user": "Emporio Alnino",
+    "tracks": [
+      { "artist": "Talking Heads", "song": "Burning Down the House", "audio": "audio/burning_down_the_house.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Foo Fighters",
+    "user": "Foo Fighters",
+    "tracks": [
+      { "artist": "Foo Fighters", "song": "Everlong", "audio": "audio/foo_fighters.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Weather Report",
+    "user": "Weather Report",
+    "tracks": [
+      { "artist": "Weather Report", "song": "Birdland", "audio": "audio/weather_report.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Diver Down",
+    "user": "Narciso Anasui",
+    "tracks": [
+      { "artist": "Van Halen", "song": "Oh, Pretty Woman", "audio": "audio/diver_down.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Whitesnake",
+    "user": "Enrico Pucci",
+    "tracks": [
+      { "artist": "Whitesnake", "song": "Here I Go Again", "audio": "audio/whitesnake.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "C-MOON",
+    "user": "Enrico Pucci",
+    "tracks": [
+      { "artist": "Paul McCartney", "song": "C Moon", "audio": "audio/c_moon.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Made in Heaven",
+    "user": "Enrico Pucci",
+    "tracks": [
+      { "artist": "Queen", "song": "Made in Heaven", "audio": "audio/made_in_heaven.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Goo Goo Dolls",
+    "user": "Gwess",
+    "tracks": [
+      { "artist": "The Goo Goo Dolls", "song": "Iris", "audio": "audio/goo_goo_dolls.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Manhattan Transfer",
+    "user": "Johngalli A.",
+    "tracks": [
+      { "artist": "The Manhattan Transfer", "song": "Boy From New York City", "audio": "audio/manhattan_transfer.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Highway to Hell",
+    "user": "Thunder McQueen",
+    "tracks": [
+      { "artist": "AC/DC", "song": "Highway to Hell", "audio": "audio/highway_to_hell.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Marilyn Manson",
+    "user": "Miraschon",
+    "tracks": [
+      { "artist": "Marilyn Manson", "song": "The Beautiful People", "audio": "audio/marilyn_manson.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Jumpin' Jack Flash",
+    "user": "Lang Rangler",
+    "tracks": [
+      { "artist": "The Rolling Stones", "song": "Jumpin' Jack Flash", "audio": "audio/jumpin_jack_flash.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Limp Bizkit",
+    "user": "Sports Maxx",
+    "tracks": [
+      { "artist": "Limp Bizkit", "song": "Break Stuff", "audio": "audio/limp_bizkit.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Survivor",
+    "user": "Guccio",
+    "tracks": [
+      { "artist": "Survivor", "song": "Eye of the Tiger", "audio": "audio/survivor.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Planet Waves",
+    "user": "Viviano Westwood",
+    "tracks": [
+      { "artist": "Bob Dylan", "song": "On a Night Like This", "audio": "audio/planet_waves.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Dragon's Dream",
+    "user": "Kenzou",
+    "tracks": [
+      { "artist": "Tangerine Dream", "song": "Stratosfear", "audio": "audio/dragons_dream.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Yo-Yo Ma",
+    "user": "D an G",
+    "tracks": [
+      { "artist": "Yo-Yo Ma", "song": "Bach: Cello Suite No. 1", "audio": "audio/yo_yo_ma.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Green, Green Grass of Home",
+    "user": "The Green Baby",
+    "tracks": [
+      { "artist": "Tom Jones", "song": "Green, Green Grass of Home", "audio": "audio/green_green_grass_of_home.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Jail House Lock",
+    "user": "Miuccia Miuller",
+    "tracks": [
+      { "artist": "Elvis Presley", "song": "Jailhouse Rock", "audio": "audio/jail_house_lock.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Bohemian Rhapsody",
+    "user": "Ungalo",
+    "tracks": [
+      { "artist": "Queen", "song": "Bohemian Rhapsody", "audio": "audio/bohemian_rhapsody.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Sky High",
+    "user": "Rikiel",
+    "tracks": [
+      { "artist": "Jigsaw", "song": "Sky High", "audio": "audio/sky_high.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": "Under World",
+    "user": "Donatello Versus",
+    "tracks": [
+      { "artist": "Underworld", "song": "Born Slippy .NUXX", "audio": "audio/under_world.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": null,
+    "user": "Gloria Costello",
+    "tracks": [
+      { "artist": "Elvis Costello", "song": "She", "audio": "audio/gloria_costello.mp3" }
+    ]
+  },
+  {
+    "part": [6],
+    "stand": null,
+    "user": "Savage Garden",
+    "tracks": [
+      { "artist": "Savage Garden", "song": "Truly Madly Deeply", "audio": "audio/savage_garden.mp3" }
+    ]
+  }
+]

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoJo Stand Musical Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+
+  <section id="menu-screen" class="container menu-card">
+    <div class="menu-header">
+      <span class="menu-badge">STAND PROUD</span>
+      <h1>JOJO'S BLIND TEST</h1>
+      <p class="menu-subtitle">Testez vos connaissances sur l'univers de JoJo's Bizarre Adventure et ses références musicales !</p>
+    </div>
+    
+    <div class="options-group">
+      <label class="part-card toggle-card">
+        <input type="checkbox" id="toggle-suggestions" checked>
+        <span class="toggle-text">
+          <strong>Activer les suggestions</strong>
+          <small>Autocomplétion intelligente (0 point)</small>
+        </span>
+      </label>
+    </div>
+
+    <div class="parts-section">
+      <h3>Sélectionnez les parties :</h3>
+      <div class="parts-grid">
+        <label class="part-card">
+          <input type="checkbox" class="part-checkbox" value="1" checked>
+          <span>Partie 1 : Phantom Blood</span>
+        </label>
+        <label class="part-card">
+          <input type="checkbox" class="part-checkbox" value="2" checked>
+          <span>Partie 2 : Battle Tendency</span>
+        </label>
+        <label class="part-card">
+          <input type="checkbox" class="part-checkbox" value="3" checked>
+          <span>Partie 3 : Stardust Crusaders</span>
+        </label>
+        <label class="part-card">
+          <input type="checkbox" class="part-checkbox" value="4" checked>
+          <span>Partie 4 : Diamond is Unbreakable</span>
+        </label>
+        <label class="part-card">
+          <input type="checkbox" class="part-checkbox" value="5" checked>
+          <span>Partie 5 : Golden Wind</span>
+        </label>
+        <label class="part-card">
+          <input type="checkbox" class="part-checkbox" value="6" checked>
+          <span>Partie 6 : Stone Ocean</span>
+        </label>
+      </div>
+    </div>
+
+    <button id="btn-start" class="btn-primary btn-pulse">COMMENCER LA PARTIE</button>
+  </section>
+
+  <section id="game-screen" class="container hidden">
+    <div class="top-bar">
+      <button id="btn-back" class="btn-secondary">Menu</button>
+      <div id="score-display">Score : 0 / 0</div>
+    </div>
+
+    <div class="game-battle-layout">
+      <!-- À gauche : Porteur (Image + Input) -->
+      <div class="side-column left-column">
+        <div class="side-content-wrapper">
+          <div class="image-card" id="card-user">
+            <img id="img-user" class="character-img" src="" alt="Porteur">
+            <span class="image-label">Porteur</span>
+          </div>
+          <div class="input-group" id="group-user">
+            <label for="input-user">Nom du Porteur</label>
+            <div class="input-wrapper">
+              <input type="text" id="input-user" placeholder="Nom du porteur">
+              <div class="suggestions" id="sugg-user"></div>
+            </div>
+            <span class="correction" id="corr-user"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Au centre : Musique & Pochette & Artiste/Musique -->
+      <div class="center-column">
+        <div class="audio-box">
+          <audio id="audio-player" controls></audio>
+        </div>
+        <div class="cover-box" id="card-cover">
+          <img id="img-cover" class="cover-img" src="" alt="Pochette">
+        </div>
+
+        <div class="center-inputs">
+          <div class="input-group" id="group-artist">
+            <label for="input-artist">Groupe / Artiste</label>
+            <div class="input-wrapper">
+              <input type="text" id="input-artist" placeholder="Artiste / Groupe">
+              <div class="suggestions" id="sugg-artist"></div>
+            </div>
+            <span class="correction" id="corr-artist"></span>
+          </div>
+
+          <div class="input-group" id="group-song">
+            <label for="input-song">Titre de la Musique</label>
+            <div class="input-wrapper">
+              <input type="text" id="input-song" placeholder="Titre exact">
+              <div class="suggestions" id="sugg-song"></div>
+            </div>
+            <span class="correction" id="corr-song"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- À droite : Stand (Image + Input) -->
+      <div class="side-column right-column">
+        <div class="side-content-wrapper">
+          <div class="image-card" id="card-stand">
+            <img id="img-stand" class="character-img" src="" alt="Stand">
+            <span class="image-label">Stand</span>
+          </div>
+          <div class="input-group" id="group-stand">
+            <label for="input-stand">Nom du Stand</label>
+            <div class="input-wrapper">
+              <input type="text" id="input-stand" placeholder="Nom du stand">
+              <div class="suggestions" id="sugg-stand"></div>
+            </div>
+            <span class="correction" id="corr-stand"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form id="quiz-form" autocomplete="off">
+      <div class="actions">
+        <button type="submit" id="btn-submit" class="btn-primary">Valider</button>
+        <button type="button" id="btn-next" class="btn-secondary hidden">Musique suivante</button>
+      </div>
+    </form>
+  </section>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
