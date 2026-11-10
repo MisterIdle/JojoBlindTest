@@ -93,8 +93,7 @@
   {
     "part": [1],
     "stand": null,
-    "user": "Dire",
-    "aliases": ["Straizo", "Dire Straits"],
+    "users": ["Dire", "Straizo"],
     "tracks": [
       { "artist": "Dire Straits", "song": "Sultans of Swing", "audio": "audio/dire_straits.mp3" }
     ]
@@ -102,8 +101,7 @@
   {
     "part": [1, 2],
     "stand": null,
-    "user": "Straizo",
-    "aliases": ["Dire", "Dire Straits"],
+    "users": ["Straizo", "Dire"],
     "tracks": [
       { "artist": "Dire Straits", "song": "Money for Nothing", "audio": "audio/dire_straits_straizo.mp3" }
     ]
@@ -152,10 +150,17 @@
   {
     "part": [2],
     "stand": null,
+    "users": ["Kars", "Esidisi", "Wamuu", "Santana"],
+    "tracks": [
+      { "artist": "Taku Iwasaki", "song": "Awake", "audio": "audio/pillar_men_theme.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
     "user": "Kars",
     "tracks": [
-      { "artist": "The Cars", "song": "Drive", "audio": "audio/kars_cars.mp3" },
-      { "artist": "Taku Iwasaki", "song": "Awake", "audio": "audio/pillar_men_theme.mp3" }
+      { "artist": "The Cars", "song": "Drive", "audio": "audio/kars_cars.mp3" }
     ]
   },
   {
@@ -163,8 +168,7 @@
     "stand": null,
     "user": "Esidisi",
     "tracks": [
-      { "artist": "AC/DC", "song": "Back In Black", "audio": "audio/acdc.mp3" },
-      { "artist": "Taku Iwasaki", "song": "Awake", "audio": "audio/pillar_men_theme.mp3" }
+      { "artist": "AC/DC", "song": "Back In Black", "audio": "audio/acdc.mp3" }
     ]
   },
   {
@@ -172,8 +176,7 @@
     "stand": null,
     "user": "Wamuu",
     "tracks": [
-      { "artist": "Wham!", "song": "Wake Me Up Before You Go-Go", "audio": "audio/wham.mp3" },
-      { "artist": "Taku Iwasaki", "song": "Awake", "audio": "audio/pillar_men_theme.mp3" }
+      { "artist": "Wham!", "song": "Wake Me Up Before You Go-Go", "audio": "audio/wham.mp3" }
     ]
   },
   {
@@ -181,8 +184,7 @@
     "stand": null,
     "user": "Santana",
     "tracks": [
-      { "artist": "Santana", "song": "Black Magic Woman", "audio": "audio/santana.mp3" },
-      { "artist": "Taku Iwasaki", "song": "Awake", "audio": "audio/pillar_men_theme.mp3" }
+      { "artist": "Santana", "song": "Black Magic Woman", "audio": "audio/santana.mp3" }
     ]
   },
   {
@@ -197,21 +199,25 @@
   {
     "part": [2],
     "stand": null,
-    "user": "Messina",
-    "aliases": ["Loggins"],
+    "users": ["Messina", "Loggins"],
     "tracks": [
-      { "artist": "Jim Messina", "song": "Your Catch", "audio": "audio/messina.mp3" },
       { "artist": "Loggins and Messina", "song": "Angry Eyes", "audio": "audio/loggins_and_messina.mp3" }
     ]
   },
   {
     "part": [2],
     "stand": null,
-    "user": "Loggins",
-    "aliases": ["Messina"],
+    "user": "Messina",
     "tracks": [
-      { "artist": "Kenny Loggins", "song": "Danger Zone", "audio": "audio/loggins.mp3" },
-      { "artist": "Loggins and Messina", "song": "Angry Eyes", "audio": "audio/loggins_and_messina.mp3" }
+      { "artist": "Jim Messina", "song": "Your Catch", "audio": "audio/messina.mp3" }
+    ]
+  },
+  {
+    "part": [2],
+    "stand": null,
+    "user": "Loggins",
+    "tracks": [
+      { "artist": "Kenny Loggins", "song": "Danger Zone", "audio": "audio/loggins.mp3" }
     ]
   },
   {
@@ -412,8 +418,7 @@
   {
     "part": [3],
     "stand": "Khnum",
-    "user": "Oingo",
-    "aliases": ["Boingo"],
+    "users": ["Oingo", "Boingo"],
     "tracks": [
       { "artist": "Oingo Boingo", "song": "Dead Man's Party", "audio": "audio/oingo_boingo.mp3" }
     ]
@@ -421,8 +426,7 @@
   {
     "part": [3],
     "stand": "Tohth",
-    "user": "Boingo",
-    "aliases": ["Oingo"],
+    "users": ["Boingo", "Oingo"],
     "tracks": [
       { "artist": "Oingo Boingo", "song": "Weird Science", "audio": "audio/oingo_boingo_boingo.mp3" }
     ]

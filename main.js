@@ -72,7 +72,14 @@ fetch('./data.json')
   .then(data => {
     allData = data;
     listStands = [...new Set(data.map(item => item.stand).filter(Boolean))].sort();
-    listUsers = [...new Set(data.map(item => item.user).filter(Boolean))].sort();
+    
+    // Récupération de tous les utilisateurs (qu'ils soient dans "user" ou dans le tableau "users")
+    const allUsers = [];
+    data.forEach(item => {
+      if (item.user) allUsers.push(item.user);
+      if (item.users && Array.isArray(item.users)) allUsers.push(...item.users);
+    });
+    listUsers = [...new Set(allUsers.filter(Boolean))].sort();
     
     const allArtists = [];
     const allSongs = [];
@@ -106,7 +113,7 @@ btns.start.addEventListener('click', () => {
   maxTotalScore = playlist.reduce((acc, item) => {
     let pts = 0;
     if (item.stand) pts += 1;
-    if (item.user) pts += 1;
+    if (item.user || (item.users && item.users.length > 0)) pts += 1;
     if (item.tracks && item.tracks.length > 0) {
       pts += 1;
       pts += item.tracks.length;
@@ -128,7 +135,6 @@ btns.back.addEventListener('click', () => {
   menuScreen.classList.remove('hidden');
 });
 
-// Affiche l'image de ce que l'utilisateur tape dynamiquement dans son propre champ
 function setupImageDynamicDisplayForInput(inputElement, cardElement, imgElement, imagePathFn) {
   cardElement.style.display = 'none';
   
@@ -193,7 +199,10 @@ function loadRound() {
     groups.stand.style.display = 'none';
   }
 
-  if (currentItem.user) {
+  // Gestion de l'affichage du champ User (qu'il y ait un "user" unique ou un tableau "users")
+  const hasUserField = currentItem.user || (currentItem.users && currentItem.users.length > 0);
+  if (hasUserField) {
+    const primaryUser = currentItem.user || currentItem.users[0];
     setupImageDynamicDisplayForInput(inputs.user, cards.user, imgs.user, (val) => getCharacterImagePath(val));
   } else {
     groups.user.style.display = 'none';
@@ -221,9 +230,14 @@ quizForm.addEventListener('submit', (e) => {
   if (currentItem.stand) {
     checkField(inputs.stand, corrs.stand, currentItem.stand, 1, cards.stand, imgs.stand, getStandImagePath(currentItem.stand));
   }
-  if (currentItem.user) {
-    checkField(inputs.user, corrs.user, currentItem.user, 1, cards.user, imgs.user, getCharacterImagePath(currentItem.user));
+  
+  const hasUserField = currentItem.user || (currentItem.users && currentItem.users.length > 0);
+  if (hasUserField) {
+    const expectedUsers = currentItem.users ? currentItem.users : [currentItem.user];
+    const primaryUserImg = expectedUsers[0];
+    checkMultiValueField(inputs.user, corrs.user, expectedUsers, 1, cards.user, imgs.user, getCharacterImagePath(primaryUserImg));
   }
+
   checkField(inputs.artist, corrs.artist, currentTrack.artist, 1, null, null, null);
   
   const trackCount = currentItem.tracks ? currentItem.tracks.length : 1;
@@ -260,13 +274,50 @@ function checkField(inputElement, correctionSpan, expectedValue, pointsValue, ca
     correctionSpan.textContent = expectedValue;
   }
 
-  // À la validation, on force l'affichage de la VRAIE image correcte du round (qu'on ait bon ou tort)
   if (cardElement && imgElement && expectedImagePath) {
     imgElement.src = expectedImagePath;
     cardElement.style.display = 'block';
   }
 }
 
+// Nouvelle fonction pour valider un champ qui peut accepter l'un des multiples utilisateurs (ex: Pillar Men)
+function checkMultiValueField(inputElement, correctionSpan, expectedValuesArray, pointsValue, cardElement, imgElement, expectedImagePath) {
+  inputElement.disabled = true;
+  const userVal = inputElement.value;
+  const isAutoCompl = isSuggestionsEnabled();
+  
+  let isCorrect = false;
+
+  for (const expectedVal of expectedValuesArray) {
+    if (isAutoCompl) {
+      if (normalizeStr(userVal) === normalizeStr(expectedVal)) {
+        isCorrect = true;
+        break;
+      }
+    } else {
+      const similarity = getSimilarity(userVal, expectedVal);
+      if (similarity >= 0.9 || normalizeStr(userVal) === normalizeStr(expectedVal)) {
+        isCorrect = true;
+        break;
+      }
+    }
+  }
+
+  if (isCorrect) {
+    inputElement.classList.add('correct');
+    score += pointsValue;
+  } else {
+    inputElement.classList.add('wrong');
+    correctionSpan.textContent = expectedValuesArray.join(', ');
+  }
+
+  if (cardElement && imgElement && expectedImagePath) {
+    imgElement.src = expectedImagePath;
+    cardElement.style.display = 'block';
+  }
+}
+
+btns.next.annotations?.remove; // no-op safeguard
 btns.next.addEventListener('click', () => {
   currentIndex++;
   if (currentIndex < playlist.length) {
