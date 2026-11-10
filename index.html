@@ -3,144 +3,297 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JoJo Stand Musical Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <title>JoJo's Bizarre Blind Test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="data:,">
 </head>
 <body>
 
-  <section id="menu-screen" class="container menu-card">
-    <div class="menu-header">
-      <span class="menu-badge">STAND PROUD</span>
-      <h1>JOJO'S BLIND TEST</h1>
-      <p class="menu-subtitle">Testez vos connaissances sur l'univers de JoJo's Bizarre Adventure et ses références musicales !</p>
-    </div>
-    
-    <div class="options-group">
-      <label class="part-card toggle-card">
-        <input type="checkbox" id="toggle-suggestions" checked>
-        <span class="toggle-text">
-          <strong>Activer les suggestions</strong>
-          <small>Autocomplétion intelligente (0 point)</small>
-        </span>
-      </label>
-    </div>
+  <div class="app-shell">
+    <!-- MENU SCREEN -->
+    <section id="menu-screen" class="screen-panel">
+      <header class="hero-banner">
+        <div class="hero-top-row">
+          <span class="jojo-tag">ARAKI'S JUKEBOX</span>
+          <button type="button" id="btn-open-codex" class="btn-outline-gold">
+            ENCYCLOPÉDIE & ENTRAÎNEMENT
+          </button>
+        </div>
+        <h1 class="hero-title">JOJO'S BLIND TEST</h1>
+        <p class="hero-subtitle">Configurez vos catégories, personnalisez le barème et testez vos connaissances musicales.</p>
+      </header>
 
-    <div class="parts-section">
-      <h3>Sélectionnez les parties :</h3>
-      <div class="parts-grid">
-        <label class="part-card">
-          <input type="checkbox" class="part-checkbox" value="1" checked>
-          <span>Partie 1 : Phantom Blood</span>
-        </label>
-        <label class="part-card">
-          <input type="checkbox" class="part-checkbox" value="2" checked>
-          <span>Partie 2 : Battle Tendency</span>
-        </label>
-        <label class="part-card">
-          <input type="checkbox" class="part-checkbox" value="3" checked>
-          <span>Partie 3 : Stardust Crusaders</span>
-        </label>
-        <label class="part-card">
-          <input type="checkbox" class="part-checkbox" value="4" checked>
-          <span>Partie 4 : Diamond is Unbreakable</span>
-        </label>
-        <label class="part-card">
-          <input type="checkbox" class="part-checkbox" value="5" checked>
-          <span>Partie 5 : Golden Wind</span>
-        </label>
-        <label class="part-card">
-          <input type="checkbox" class="part-checkbox" value="6" checked>
-          <span>Partie 6 : Stone Ocean</span>
-        </label>
-      </div>
-    </div>
-
-    <button id="btn-start" class="btn-primary btn-pulse">COMMENCER LA PARTIE</button>
-  </section>
-
-  <section id="game-screen" class="container hidden">
-    <div class="top-bar">
-      <button id="btn-back" class="btn-secondary">Menu</button>
-      <div id="score-display">Score : 0 / 0</div>
-    </div>
-
-    <div class="game-battle-layout">
-      <!-- À gauche : Porteur (Image + Input) -->
-      <div class="side-column left-column">
-        <div class="side-content-wrapper">
-          <div class="image-card" id="card-user">
-            <img id="img-user" class="character-img" src="" alt="Porteur">
-            <span class="image-label">Porteur</span>
+      <div class="menu-grid">
+        <div class="config-block">
+          <div class="block-header">
+            <h2>1. Champs à deviner</h2>
+            <span>Cochez ce que vous voulez jouer</span>
           </div>
-          <div class="input-group" id="group-user">
-            <label for="input-user">Nom du Porteur</label>
-            <div class="input-wrapper">
-              <input type="text" id="input-user" placeholder="Nom du porteur">
+          <div class="check-list">
+            <label class="check-card">
+              <input type="checkbox" id="opt-field-user" checked>
+              <div class="check-info">
+                <strong>Nom du Porteur / Personnage</strong>
+                <small>Deviner à qui appartient le thème ou le Stand</small>
+              </div>
+              <span class="pts-pill">+1 pt</span>
+            </label>
+            <label class="check-card">
+              <input type="checkbox" id="opt-field-stand" checked>
+              <div class="check-info">
+                <strong>Nom du Stand</strong>
+                <small>Ignoré automatiquement si le personnage n'a pas de Stand</small>
+              </div>
+              <span class="pts-pill">+1 pt</span>
+            </label>
+            <label class="check-card">
+              <input type="checkbox" id="opt-field-artist" checked>
+              <div class="check-info">
+                <strong>Groupe / Artiste</strong>
+                <small>L'auteur ou compositeur du morceau joué</small>
+              </div>
+              <span class="pts-pill">+1 pt</span>
+            </label>
+            <label class="check-card">
+              <input type="checkbox" id="opt-field-song" checked>
+              <div class="check-info">
+                <strong>Titre de la Musique</strong>
+                <small>Le nom exact du titre en cours de lecture</small>
+              </div>
+              <span class="pts-pill">+2 pts</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="config-block">
+          <div class="block-header">
+            <h2>2. Règles de Points</h2>
+            <span>Personnalisez la difficulté</span>
+          </div>
+          <div class="check-list">
+            <label class="check-card">
+              <input type="checkbox" id="opt-autocomplete" checked>
+              <div class="check-info">
+                <strong>Activer l'Auto-complétion</strong>
+                <small id="sub-autocomplete">Activé : liste d'aide (+0 pt) • Désactivé : tolérance 90% (+5 pts)</small>
+              </div>
+              <span id="badge-autocomplete" class="pts-pill muted">+0 pt</span>
+            </label>
+            <label class="check-card">
+              <input type="checkbox" id="opt-no-ost">
+              <div class="check-info">
+                <strong>Exclure les Main Themes (OST)</strong>
+                <small id="sub-no-ost">Cochez pour jouer uniquement les vraies références musicales</small>
+              </div>
+              <span id="badge-no-ost" class="pts-pill muted">+0 pt</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="config-block parts-block">
+        <div class="block-header">
+          <h2>3. Parties de JoJo</h2>
+          <div class="quick-actions">
+            <button type="button" id="btn-select-all" class="link-btn">Tout cocher</button>
+            <button type="button" id="btn-deselect-all" class="link-btn">Tout décocher</button>
+          </div>
+        </div>
+        <div class="parts-grid">
+          <label class="part-tile">
+            <input type="checkbox" class="part-checkbox" value="1" checked>
+            <span class="part-badge">PART 1</span>
+            <strong>Phantom Blood</strong>
+          </label>
+          <label class="part-tile">
+            <input type="checkbox" class="part-checkbox" value="2" checked>
+            <span class="part-badge">PART 2</span>
+            <strong>Battle Tendency</strong>
+          </label>
+          <label class="part-tile">
+            <input type="checkbox" class="part-checkbox" value="3" checked>
+            <span class="part-badge">PART 3</span>
+            <strong>Stardust Crusaders</strong>
+          </label>
+          <label class="part-tile">
+            <input type="checkbox" class="part-checkbox" value="4" checked>
+            <span class="part-badge">PART 4</span>
+            <strong>Diamond is Unbreakable</strong>
+          </label>
+          <label class="part-tile">
+            <input type="checkbox" class="part-checkbox" value="5" checked>
+            <span class="part-badge">PART 5</span>
+            <strong>Golden Wind</strong>
+          </label>
+          <label class="part-tile">
+            <input type="checkbox" class="part-checkbox" value="6" checked>
+            <span class="part-badge">PART 6</span>
+            <strong>Stone Ocean</strong>
+          </label>
+        </div>
+      </div>
+
+      <div class="config-block slider-block">
+        <div class="block-header">
+          <h2>4. Durée de la Partie</h2>
+          <span id="slider-val-display" class="gold-text">20 Manches (Max: 147)</span>
+        </div>
+        <div class="slider-wrapper">
+          <input type="range" id="round-slider" min="1" max="147" value="20" class="jojo-slider">
+        </div>
+      </div>
+
+      <button type="button" id="btn-start" class="btn-launch">COMMENCER LA PARTIE</button>
+    </section>
+
+    <!-- GAME SCREEN -->
+    <section id="game-screen" class="screen-panel hidden">
+      <div class="topbar">
+        <button type="button" id="btn-back" class="btn-ghost">← Abandonner</button>
+        <div class="stats-bar">
+          <div id="round-display" class="stat-chip">Manche 1 / 1</div>
+          <div id="score-display" class="stat-chip gold">Score : 0 / 0</div>
+        </div>
+      </div>
+
+      <div id="round-breakdown" class="feedback-banner hidden"></div>
+
+      <div class="battle-stage">
+        <div class="stage-col" id="col-user">
+          <div class="entity-card hidden" id="card-user">
+            <img id="img-user" src="" alt="">
+            <span class="entity-tag">Porteur</span>
+          </div>
+          <div class="field-box" id="group-user">
+            <div class="field-header">
+              <label for="input-user">Nom du Porteur</label>
+              <span class="field-pts">+1 pt</span>
+            </div>
+            <div class="input-wrap">
+              <input type="text" id="input-user" placeholder="">
               <div class="suggestions" id="sugg-user"></div>
             </div>
-            <span class="correction" id="corr-user"></span>
+            <div class="correction" id="corr-user"></div>
           </div>
         </div>
-      </div>
 
-      <!-- Au centre : Musique & Pochette & Artiste/Musique -->
-      <div class="center-column">
-        <div class="audio-box">
-          <audio id="audio-player" controls></audio>
-        </div>
-        <div class="cover-box" id="card-cover">
-          <img id="img-cover" class="cover-img" src="" alt="Pochette">
-        </div>
+        <div class="stage-col center-col">
+          <div class="player-card">
+            <span class="player-label">EXTRAIT AUDIO</span>
+            <audio id="audio-player" controls></audio>
+          </div>
 
-        <div class="center-inputs">
-          <div class="input-group" id="group-artist">
-            <label for="input-artist">Groupe / Artiste</label>
-            <div class="input-wrapper">
-              <input type="text" id="input-artist" placeholder="Artiste / Groupe">
-              <div class="suggestions" id="sugg-artist"></div>
+          <div class="cover-card hidden" id="card-cover">
+            <img id="img-cover" src="" alt="">
+          </div>
+
+          <div class="center-fields">
+            <div class="field-box" id="group-artist">
+              <div class="field-header">
+                <label for="input-artist">Groupe / Artiste</label>
+                <span class="field-pts">+1 pt</span>
+              </div>
+              <div class="input-wrap">
+                <input type="text" id="input-artist" placeholder="">
+                <div class="suggestions" id="sugg-artist"></div>
+              </div>
+              <div class="correction" id="corr-artist"></div>
             </div>
-            <span class="correction" id="corr-artist"></span>
-          </div>
 
-          <div class="input-group" id="group-song">
-            <label for="input-song">Titre de la Musique</label>
-            <div class="input-wrapper">
-              <input type="text" id="input-song" placeholder="Titre exact">
-              <div class="suggestions" id="sugg-song"></div>
+            <div class="field-box" id="group-song">
+              <div class="field-header">
+                <label for="input-song">Titre de la Musique</label>
+                <span class="field-pts">+2 pts</span>
+              </div>
+              <div class="input-wrap">
+                <input type="text" id="input-song" placeholder="">
+                <div class="suggestions" id="sugg-song"></div>
+              </div>
+              <div class="correction" id="corr-song"></div>
             </div>
-            <span class="correction" id="corr-song"></span>
           </div>
         </div>
-      </div>
 
-      <!-- À droite : Stand (Image + Input) -->
-      <div class="side-column right-column">
-        <div class="side-content-wrapper">
-          <div class="image-card" id="card-stand">
-            <img id="img-stand" class="character-img" src="" alt="Stand">
-            <span class="image-label">Stand</span>
+        <div class="stage-col" id="col-stand">
+          <div class="entity-card hidden" id="card-stand">
+            <img id="img-stand" src="" alt="">
+            <span class="entity-tag">Stand</span>
           </div>
-          <div class="input-group" id="group-stand">
-            <label for="input-stand">Nom du Stand</label>
-            <div class="input-wrapper">
-              <input type="text" id="input-stand" placeholder="Nom du stand">
+          <div class="field-box" id="group-stand">
+            <div class="field-header">
+              <label for="input-stand">Nom du Stand</label>
+              <span class="field-pts">+1 pt</span>
+            </div>
+            <div class="input-wrap">
+              <input type="text" id="input-stand" placeholder="">
               <div class="suggestions" id="sugg-stand"></div>
             </div>
-            <span class="correction" id="corr-stand"></span>
+            <div class="correction" id="corr-stand"></div>
           </div>
         </div>
       </div>
-    </div>
 
-    <form id="quiz-form" autocomplete="off">
-      <div class="actions">
-        <button type="submit" id="btn-submit" class="btn-primary">Valider</button>
-        <button type="button" id="btn-next" class="btn-secondary hidden">Musique suivante</button>
+      <form id="quiz-form" autocomplete="off" class="game-footer">
+        <button type="submit" id="btn-submit" class="btn-launch">VALIDER MES RÉPONSES</button>
+        <button type="button" id="btn-next" class="btn-launch next-mode hidden">MANCHE SUIVANTE →</button>
+      </form>
+    </section>
+
+    <!-- RESULT SCREEN -->
+    <section id="result-screen" class="screen-panel hidden text-center">
+      <div class="result-container">
+        <h2 class="hero-title">RÉSULTATS DU BLIND TEST</h2>
+        <p class="hero-subtitle result-message" id="result-message">Bravo ! Voici votre score final :</p>
+        
+        <div class="score-showcase">
+          <span id="final-score" class="big-score">0</span>
+          <span class="score-divider">/</span>
+          <span id="final-max-score" class="big-max-score">0</span>
+        </div>
+
+        <div class="result-actions">
+          <button type="button" id="btn-replay" class="btn-launch">REJOUER UNE PARTIE</button>
+          <button type="button" id="btn-result-codex" class="btn-outline-gold">S'ENTRAÎNER DANS L'ENCYCLOPÉDIE</button>
+        </div>
       </div>
-    </form>
-  </section>
+    </section>
 
-  <script type="module" src="main.js"></script>
+    <!-- CODEX SCREEN -->
+    <section id="codex-screen" class="screen-panel hidden">
+      <div class="topbar">
+        <button type="button" id="btn-codex-back" class="btn-ghost">← Retour au Menu</button>
+        <h2 class="codex-heading">ENCYCLOPÉDIE & ENTRAÎNEMENT</h2>
+        <div id="codex-count" class="stat-chip">0 entrées</div>
+      </div>
+
+      <div class="codex-toolbar">
+        <input type="text" id="codex-search" class="search-bar" placeholder="Rechercher un personnage, Stand, artiste ou titre...">
+        <div class="part-pills" id="codex-part-filters">
+          <button type="button" class="pill-btn active" data-part="all">Toutes</button>
+          <button type="button" class="pill-btn" data-part="1">Part 1</button>
+          <button type="button" class="pill-btn" data-part="2">Part 2</button>
+          <button type="button" class="pill-btn" data-part="3">Part 3</button>
+          <button type="button" class="pill-btn" data-part="4">Part 4</button>
+          <button type="button" class="pill-btn" data-part="5">Part 5</button>
+          <button type="button" class="pill-btn" data-part="6">Part 6</button>
+        </div>
+      </div>
+
+      <div id="codex-audio-bar" class="codex-player-bar hidden">
+        <div class="codex-now-playing">
+          <span class="live-dot"></span>
+          <strong id="codex-playing-title">Lecture en cours</strong>
+        </div>
+        <audio id="codex-audio-player" controls></audio>
+      </div>
+
+      <div id="codex-grid" class="codex-grid"></div>
+    </section>
+  </div>
+
+  <script type="module" src="./logic/main.js"></script>
 </body>
 </html>
